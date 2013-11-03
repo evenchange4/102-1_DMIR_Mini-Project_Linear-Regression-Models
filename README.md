@@ -58,7 +58,7 @@ example: （可用拖曳方式取得路徑）
 - 使用 `/data/ldpa30_test_blind.csv` 其中包含 `week_index`: 371 ~ 494。
 - 最後挑選 `Model 2: Linear Regression Models`，並且搭配 Feature2 來做最後的預測，並且挑選該 `week_index` 區域中 `week_return1` 值最高者，並輸出最後的格式。
 - 最後輸出的檔案為 `result.csv`，如下截圖。
-	- ![result.csv]()
+	- ![result.csv](https://raw.github.com/evenchange4/102-1_DMIR_Mini-Project_Linear-Regression-Models/master/image/result_csv.PNG)
 
 ## Source code
 
