@@ -69,3 +69,4 @@ example: （可用拖曳方式取得路徑）
 - [Generalized linear models in R](http://plantecology.syr.edu/fridley/bio793/glm.html)
 - [11.6.2 glm()函數](http://www.biosino.org/pages/newhtm/r/tchtml/The-glm_0028_0029-function.html)
 - [Generative Classification Models](https://github.com/evenchange4/102-1_DMIR_Hw3_Generative-Classification-Models)
+- [How to Write CSV in R](http://rprogramming.net/write-csv-in-r/)
