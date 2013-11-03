@@ -24,16 +24,16 @@ The `Mini Project` report from NTU102-1 [DMIR](https://ceiba.ntu.edu.tw/course/9
 
 ## Model 1: Generative Classification Model
 - Feature: `alpha`、`beta_mkt`、`beta_hml`、`beta_smb`、`sigma`
-- Result: ![evaluation result](https://raw.github.com/evenchange4/102-1_DMIR_Hw3_Generative-Classification-Models/master/img/result.png)
-- 依據 [Generative Classification Models](https://github.com/evenchange4/102-1_DMIR_Hw3_Generative-Classification-Models)
-的結果來看，Recall 的結果不是很理想，而且這次 Mini Project
-想要的並不是分類的結果，換成以 Linear Regression Model 來試試看。
 
+- 依據 Hw3 的[Generative Classification Models](https://github.com/evenchange4/102-1_DMIR_Hw3_Generative-Classification-Models)
+的結果來看，`Recall` 的結果不是很理想，而且這次 Mini Project
+想要的並不是分類的結果，換成以 Linear Regression Model 來試試看。
+	- Result: 10-fold-validation 的結果。![evaluation result](https://raw.github.com/evenchange4/102-1_DMIR_Hw3_Generative-Classification-Models/master/img/result.png)
 ## Model 2: Linear Regression Models
 - Feature1: `alpha`、`beta_mkt`、`beta_hml`、`beta_smb`、`sigma`
 - Feature2: `alpha`、`beta_mkt`、`beta_hml`、`beta_smb`、`sigma`、`class`
 	- 添加 `class` 的結果希望預期的結果更靠近前幾名的`week_return1`的趨勢。
-- Result:
+- Result: 10-fold-validation 的結果。
 
 ## 如何執行
 
