@@ -28,7 +28,7 @@ The `Mini Project` report from NTU102-1 [DMIR](https://ceiba.ntu.edu.tw/course/9
 - 依據 Hw3 的[Generative Classification Models](https://github.com/evenchange4/102-1_DMIR_Hw3_Generative-Classification-Models)
 的結果來看，`Recall` 的結果不是很理想，而且這次 Mini Project
 想要的並不是分類的結果，換成以 Linear Regression Model 來試試看。
-	- Result: 10-fold-validation 的結果。![evaluation result](https://raw.github.com/evenchange4/102-1_DMIR_Hw3_Generative-Classification-Models/master/img/result.png)
+	- Result: 10-fold-validation 的結果，以及平均。![evaluation result](https://raw.github.com/evenchange4/102-1_DMIR_Hw3_Generative-Classification-Models/master/img/result.png)
 
 ## Model 2: Linear Regression Models
 - Feature1: `alpha`、`beta_mkt`、`beta_hml`、`beta_smb`、`sigma`
