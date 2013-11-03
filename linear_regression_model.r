@@ -9,7 +9,7 @@ for( i in 1:length(bin_list)){
 }
 
 lm_function <- function(bin_train, bin_test){
-	lm = lm(week_return1 ~ alpha+beta_mkt+beta_hml+beta_smb+sigma, data = bin_train)
+	lm = lm(week_return1 ~ 1+alpha+beta_mkt+beta_hml+beta_smb+sigma, data = bin_train)
 	prediction_lm = predict(lm, newdata=bin_test)
 
 	error = bin_test$week_return1 - prediction_lm
@@ -18,7 +18,7 @@ lm_function <- function(bin_train, bin_test){
 }
 
 glm_function <- function(bin_train, bin_test){
-	glm = glm(week_return1 ~ alpha+beta_mkt+beta_hml+beta_smb+sigma+class, data = bin_train)
+	glm = glm(week_return1 ~ 1+alpha+beta_mkt+beta_hml+beta_smb+sigma+class, data = bin_train)
 	prediction_glm = predict(glm, newdata=bin_test)
 
 	error = bin_test$week_return1 - prediction_glm
@@ -44,5 +44,4 @@ for( i in 1:length(bin_list)){
 	rmse_matrix["glm",i] = glm_function(bin_train, bin_validation)
 }
 
-## setp2: testing
-glm = 
+
