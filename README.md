@@ -29,11 +29,12 @@ The `Mini Project` report from NTU102-1 [DMIR](https://ceiba.ntu.edu.tw/course/9
 的結果來看，`Recall` 的結果不是很理想，而且這次 Mini Project
 想要的並不是分類的結果，換成以 Linear Regression Model 來試試看。
 	- Result: 10-fold-validation 的結果。![evaluation result](https://raw.github.com/evenchange4/102-1_DMIR_Hw3_Generative-Classification-Models/master/img/result.png)
+
 ## Model 2: Linear Regression Models
 - Feature1: `alpha`、`beta_mkt`、`beta_hml`、`beta_smb`、`sigma`
 - Feature2: `alpha`、`beta_mkt`、`beta_hml`、`beta_smb`、`sigma`、`class`
 	- 添加 `class` 的結果希望預期的結果更靠近前幾名的`week_return1`的趨勢。
-- Result: 10-fold-validation 的結果。
+- Result: 10-fold-validation 的結果。![rmse evaluation result](https://raw.github.com/evenchange4/102-1_DMIR_Mini-Project_Linear-Regression-Models/master/image/LM-rmse.png)
 
 ## 如何執行
 
