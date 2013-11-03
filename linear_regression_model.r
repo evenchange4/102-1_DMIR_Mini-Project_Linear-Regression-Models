@@ -1,12 +1,12 @@
-setup_data = read.csv('data/ldpa30_train preprocess.csv')
+setup_data_train = read.csv('data/ldpa30_train preprocess.csv')
+setup_data_test = read.csv('data/ldpa30_test_blind.csv')
+
+## setp1: training & validation
 
 bin_list =  paste("bin", 1:10, sep = "")
 for( i in 1:length(bin_list)){
-	assign(bin_list[i], subset(setup_data, new_index > (i-1)*1110 & new_index <= i*1110 ) )
+	assign(bin_list[i], subset(setup_data_train, new_index > (i-1)*1110 & new_index <= i*1110 ) )
 }
-bin_train = bin1
-bin_test  = rbind(bin2,bin3,bin4,bin5,bin6,bin7,bin8,bin9,bin10)
-
 
 lm_function <- function(bin_train, bin_test){
 	lm = lm(week_return1 ~ alpha+beta_mkt+beta_hml+beta_smb+sigma, data = bin_train)
@@ -44,3 +44,5 @@ for( i in 1:length(bin_list)){
 	rmse_matrix["glm",i] = glm_function(bin_train, bin_validation)
 }
 
+## setp2: testing
+glm = 

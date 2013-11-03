@@ -19,6 +19,8 @@ The `Mini Project` report from NTU102-1 [DMIR](https://ceiba.ntu.edu.tw/course/9
 	- ![pre-processes data format](https://raw.github.com/evenchange4/102-1_DMIR_Hw3_Generative-Classification-Models/master/img/pre-proessed%20data.png)
 
 ## Evaluation
+- use `/data/ldpa30_train.csv`
+	- `week_index`: 1 ~ 370
 - Use 10-fold-validation: 將資料切成十份，輪流當 Training data。
 - 最後憑藉 `accuracy`、`rmse` 來挑選適當的 Model。
 
@@ -34,7 +36,12 @@ The `Mini Project` report from NTU102-1 [DMIR](https://ceiba.ntu.edu.tw/course/9
 - Feature1: `alpha`、`beta_mkt`、`beta_hml`、`beta_smb`、`sigma`
 - Feature2: `alpha`、`beta_mkt`、`beta_hml`、`beta_smb`、`sigma`、`class`
 	- 添加 `class` 的結果希望預期的結果更靠近前幾名的`week_return1`的趨勢。
-- Result: 10-fold-validation 的結果。![rmse evaluation result](https://raw.github.com/evenchange4/102-1_DMIR_Mini-Project_Linear-Regression-Models/master/image/LM-rmse.png)
+- Result: 10-fold-validation 的結果，可以發現 Feature2 出來預測的結果比 Feature1 還要好。![rmse evaluation result](https://raw.github.com/evenchange4/102-1_DMIR_Mini-Project_Linear-Regression-Models/master/image/LM-rmse.png)
+
+## Output
+- use `/data/ldpa30_test_blind.csv`
+	- `week_index`: 371 ~ 494
+最後挑選 Model 2: Linear Regression Models，並且搭配 Feature2 來做最後的預測，並且挑選該 `week` 輸出最後的格式。
 
 ## 如何執行
 
